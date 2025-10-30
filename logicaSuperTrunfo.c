@@ -5,7 +5,7 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     int cartaJogador, cartaComputador, atributoJogador, atributoComputador, jogador, computador;
-    char atributoEscolhido[30],
+    char atributoEscolhido[30];
     //int rPop, rArea, rPib, rNpt, rDenpop, rPibcap, rSuper;
 // variáveis para Carta1
     char pais1[10];                          // Letra de 'A' a 'H'
@@ -19,7 +19,7 @@ int main() {
     //float pibcap1;                         // PIB per capita
     //float Super1;                          // Super Poder soma de todos as variavéis
 // variáveis para Carta2
-    char pais2 [30];                       // Letra de 'A' a 'H'
+    char pais2[30];                       // Letra de 'A' a 'H'
     //char codcarta2[3];                     // Ex: A01, B03
     //char nome2[50];                        // Nome da cidade
     int pop2;                              // Número de habitantes
@@ -34,7 +34,7 @@ int main() {
   printf("Cadastre a Carta 1\n");
   printf(" \n");
   printf("Digite o Pais): \n");
-  scanf("%s", &P);
+  scanf("%s", &pais1);
   //printf("Digite o Código da Carta (ex.: 01): \n");
   //scanf("%s", &codcarta1);
   //printf("Digite o Nome da Cidade: \n");
