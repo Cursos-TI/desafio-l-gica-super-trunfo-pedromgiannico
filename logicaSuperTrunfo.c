@@ -5,10 +5,10 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     int cartaJogador, cartaComputador, atributoJogador, atributoComputador, jogador, computador;
-    char atributoEscolhido[30];
+    char *atributoEscolhido;
     //int rPop, rArea, rPib, rNpt, rDenpop, rPibcap, rSuper;
 // variáveis para Carta1
-    char pais1[10] = ESPANHA;                          // Letra de 'A' a 'H'
+    char pais1[10] = "ESPANHA";                          // Letra de 'A' a 'H'
     //char codcarta1[3];                     // Ex: A01, B03
    // char nome1[50];                        // Nome da cidade
     int pop1 = 47.45;                              // Número de habitantes
@@ -19,7 +19,7 @@ int main() {
     //float pibcap1;                         // PIB per capita
     //float Super1;                          // Super Poder soma de todos as variavéis
 // variáveis para Carta2
-    char pais2[30] = ITALIA;                       // Letra de 'A' a 'H'
+    char pais2[30] = "ITALIA";                       // Letra de 'A' a 'H'
     //char codcarta2[3];                     // Ex: A01, B03
     //char nome2[50];                        // Nome da cidade
     int pop2 = 59.03;                              // Número de habitantes
@@ -119,7 +119,7 @@ int main() {
     printf("3. PIB\n");
     printf("4. Pontos turísticos\n");
     printf("5. Densidade populacional\n");
-    printf("Escolha o atributo (de 1 a 7): \n");
+    printf("Escolha o atributo (de 1 a 5): \n");
     scanf("%d", &atributoJogador);
     cartaComputador = rand() % 2 + 1;
     switch (cartaJogador)
@@ -149,29 +149,29 @@ int main() {
       switch (atributoJogador)
     {
     case 1:
-        atributoEscolhido = "População";
+        atributoEscolhido = "Populacao";
         jogador = pop1;
-        printf("Jogador: População: %d -", pop1);
+        printf("População: %d -", pop1);
         break;
     case 2:
-    atributoEscolhido = "Área";
+    atributoEscolhido = "area";
         jogador = area1;
-        printf("Jogador: Área: %.2f km² -", area1);
+        printf("Área: %.2f km² -", area1);
         break;  
     case 3:
     atributoEscolhido = "PIB";
         jogador = pib1;
-        printf("Jogador: PIB: %.2f bilhões de reais -", pib1);
+        printf("PIB: %.2f bilhões de reais -", pib1);
         break;
     case 4:
     atributoEscolhido = "Pontos turísticos";
         jogador = npt1;
-        printf("Jogador: Pontos Turísticos: %d -", npt1);
+        printf("Pontos Turísticos: %d -", npt1);
         break;  
     case 5:
     atributoEscolhido = "Densidades populacional";
         jogador = denpop1;
-        printf("Jogador: Densidade populacinal: %.2f hab/km² -", denpop1);
+        printf("Densidade populacinal: %.2f hab/km² -", denpop1);
         break;  
     default:
         printf("Opção inválida\n");
@@ -181,23 +181,23 @@ int main() {
     {
     case 1:
     computador = pop2;
-        printf("Jogador: População: %d -", pop2);
+        printf("População: %d -", pop2);
         break;
     case 2:
     computador = area2;
-        printf("Jogador: Área: %.2f km² -", area2);
+        printf("Área: %.2f km² -", area2);
         break;  
     case 3:
     computador = pib2;
-        printf("Jogador: PIB: %.2f bilhões de reais -", pib2);
+        printf("JPIB: %.2f bilhões de reais -", pib2);
         break;
     case 4:
     computador = npt2;
-        printf("Jogador: Pontos Turísticos: %d -", npt2);
+        printf("Pontos Turísticos: %d -", npt2);
         break;  
     case 5:
     computador = denpop2;
-        printf("Jogador: Densidade populacinal: %.2f hab/km² -", denpop2);
+        printf("Densidade populacinal: %.2f hab/km² -", denpop2);
         break;  
     }
     } else if (cartaJogador == 2 || cartaComputador == 1) {
@@ -206,27 +206,27 @@ int main() {
     case 1:
     atributoEscolhido = "População";
         jogador = pop2;
-        printf("Jogador: População: %d -", pop2);
+        printf("População: %d -", pop2);
         break;
     case 2:
     atributoEscolhido = "Área";
         jogador = area2;
-        printf("Jogador: Área: %.2f km² -", area2);
+        printf("Área: %.2f km² -", area2);
         break;  
     case 3:
     atributoEscolhido = "PIB";
         jogador = pib2;
-        printf("Jogador: PIB: %.2f bilhões de reais -", pib2);
+        printf("PIB: %.2f bilhões de reais -", pib2);
         break;
     case 4:
     atributoEscolhido = "Pontos turísticos";
         jogador = npt2;
-        printf("Jogador: Pontos Turísticos: %d -", npt2);
+        printf("Pontos Turísticos: %d -", npt2);
         break;  
     case 5:
     atributoEscolhido = "Densidades populacional";
         jogador = denpop2;
-        printf("Jogador: Densidade populacinal: %.2f hab/km² -", denpop2);
+        printf("Densidade populacinal: %.2f hab/km² -", denpop2);
         break;  
     default:
         printf("Opção inválida\n");
@@ -236,36 +236,36 @@ int main() {
     {
     case 1:
     computador = pop1;
-        printf("Jogador: População: %d -", pop1);
+        printf("População: %d -", pop1);
         break;
     case 2:
     computador = area1;
-        printf("Jogador: Área: %.2f km² -", area1);
+        printf("Área: %.2f km² -", area1);
         break;  
     case 3:
     computador = pib1;
-        printf("Jogador: PIB: %.2f bilhões de reais -", pib1);
+        printf("PIB: %.2f bilhões de reais -", pib1);
         break;
     case 4:
     computador = npt1;
-        printf("Jogador: Pontos Turísticos: %d -", npt1);
+        printf("Pontos Turísticos: %d -", npt1);
         break;  
     case 5:
     computador = denpop1;
-        printf("Jogador: Densidade populacinal: %.2f hab/km² -", denpop1);
+        printf("Densidade populacinal: %.2f hab/km² -", denpop1);
         break;  
     }
     }
     if ( atributoJogador == 5) {
     if (jogador < computador){
-      printf("### Parabéns! Você ganhou!")
+      printf("### Parabéns! Você ganhou!");
     } else {
-      printf("Que pena! O computador ganhou!")
+      printf("Que pena! O computador ganhou!");
     }
   } else if (jogador > computador){
-      printf("### Parabéns! Você ganhou!")
+      printf("### Parabéns! Você ganhou!");
     } else {
-      printf("Que pena! O computador ganhou!")
+      printf("Que pena! O computador ganhou!");
     }
   
     // Exibição dos Resultados:
