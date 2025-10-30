@@ -8,38 +8,38 @@ int main() {
     char atributoEscolhido[30];
     //int rPop, rArea, rPib, rNpt, rDenpop, rPibcap, rSuper;
 // variáveis para Carta1
-    char pais1[10];                          // Letra de 'A' a 'H'
+    char pais1[10] = ESPANHA;                          // Letra de 'A' a 'H'
     //char codcarta1[3];                     // Ex: A01, B03
    // char nome1[50];                        // Nome da cidade
-    int pop1;                              // Número de habitantes
-    float area1;                           // Área em km²
-    float pib1;                            // PIB da cidade em bilhões de reais
-    int npt1;                              // Número de pontos turísticos
+    int pop1 = 47.45;                              // Número de habitantes
+    float area1 = 505.99;                           // Área em km²
+    float pib1 = 1.615;                            // PIB da cidade em bilhões de reais
+    int npt1 = 27;                              // Número de pontos turísticos
     float denpop1;                         // Densidade populacional
     //float pibcap1;                         // PIB per capita
     //float Super1;                          // Super Poder soma de todos as variavéis
 // variáveis para Carta2
-    char pais2[30];                       // Letra de 'A' a 'H'
+    char pais2[30] = ITALIA;                       // Letra de 'A' a 'H'
     //char codcarta2[3];                     // Ex: A01, B03
     //char nome2[50];                        // Nome da cidade
-    int pop2;                              // Número de habitantes
-    float area2;                           // Área em km²
-    float pib2;                            // PIB da cidade em bilhões de reais
-    int npt2;                              // Número de pontos turísticos
+    int pop2 = 59.03;                              // Número de habitantes
+    float area2 = 301.34;                           // Área em km²
+    float pib2 = 2.261;                            // PIB da cidade em bilhões de reais
+    int npt2 = 18;                              // Número de pontos turísticos
     float denpop2;                         // Densidade populacional
     //float pibcap2;                         // PIB per capita
     //float Super2;                          // Super Poder soma de todos as variavéis
     // Cadastro das Cartas:
 // Área para entrada de dados da Carta1
-  printf("Cadastre a Carta 1\n");
-  printf(" \n");
-  printf("Digite o Pais): \n");
-  scanf("%s", &pais1);
+  //printf("Cadastre a Carta 1\n");
+  //printf(" \n");
+  //rintf("Digite o Pais): \n");
+  //scanf("%s", &pais1);
   //printf("Digite o Código da Carta (ex.: 01): \n");
   //scanf("%s", &codcarta1);
   //printf("Digite o Nome da Cidade: \n");
   //scanf("%s", &nome1);
-  printf("Digite a População: \n");
+  /*printf("Digite a População: \n");
   scanf("%d", &pop1);
   printf("Digite a Área (em Km²): \n");
   scanf("%f", &area1);
@@ -65,6 +65,7 @@ int main() {
   scanf("%f", &pib2);
   printf("Digite o Número de Pontos Turísticos: \n");
   scanf("%d", &npt2);
+  */
   // Área para exibição dos dados da Carta1
   printf(" \n");
   printf("Carta 1\n");
