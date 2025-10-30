@@ -228,35 +228,35 @@ int main() {
         }
     }
     if (atributo == 2 ) {
-       if (area1 < area2) {
+       if (area1 > area2) {
         printf("A carta vencedora é a Carta 1 !!\n");
         } else {
         printf("A carta vencedora é a Carta 2 !!\n");    
         }
     }   
      if (atributo == 3 ) {
-       if (pib1 < pib2) {
+       if (pib1 > pib2) {
         printf("A carta vencedora é a Carta 1 !!\n");
         } else {
         printf("A carta vencedora é a Carta 2 !!\n");    
         }
     }   
     if (atributo == 4 ) {
-       if (npt1 < npt2) {
+       if (npt1 > npt2) {
         printf("A carta vencedora é a Carta 1 !!\n");
         } else {
         printf("A carta vencedora é a Carta 2 !!\n");    
         }
     } 
     if (atributo == 6 ) {
-       if (pibcap1 < pibcap2) {
+       if (pibcap1 > pibcap2) {
         printf("A carta vencedora é a Carta 1 !!\n");
         } else {
         printf("A carta vencedora é a Carta 2 !!\n");    
         }
     } 
     if (atributo == 7 ) {
-       if (Super1 < Super2) {
+       if (Super1 > Super2) {
         printf("A carta vencedora é a Carta 1 !!\n");
         } else {
         printf("A carta vencedora é a Carta 2 !!\n");    
